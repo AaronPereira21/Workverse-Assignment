@@ -267,8 +267,10 @@ const WorkverseBanner = () => {
           </p>
         </div>
         <img src={mainImage} alt="buy" style={mainImageStyle} />
-        <div style={headerBelowMain}>
-          <p>
+        <div style={headerBelowMain }>
+          <p style={{
+            marginTop:"13px",
+          }}>
             Why your workplace intelligence will give you a unique edge in career growth
           </p>
         </div>
