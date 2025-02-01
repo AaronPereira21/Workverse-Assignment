@@ -189,6 +189,7 @@ const WorkverseBanner = () => {
             fontWeight: "700",
             width:"204px",
             margin: "0 32px 0 0",
+            color:'#1F292A'
           }}>
             View your Certificate
           </button>
