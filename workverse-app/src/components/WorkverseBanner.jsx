@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 import dummyImage from "../assets/dummy-image.png"; 
-import mainImage from "../assets/group679.png";
+
 import tick from "../assets/vector.png";
 import instalogo from "../assets/insta.png";
 import fblogo from "../assets/fb.png";
@@ -86,7 +86,9 @@ const WorkverseBanner = () => {
     width: "495px",
     height: "268px",
     marginLeft:"auto",
-    marginRight:"auto"
+    marginRight:"auto",
+    background: "linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1885) 100%)"
+
   };
 
   const headerBelowMain = {
@@ -266,7 +268,76 @@ const WorkverseBanner = () => {
             How about now learning how to engage with <span style={nameStyle}>10+ unique personalities, building mind maps to break down complex problems and connect the dots to perform boss-impressing jugaads?</span>
           </p>
         </div>
-        <img src={mainImage} alt="buy" style={mainImageStyle} />
+        <div style={mainImageStyle}>
+            <div>
+              <p style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontSize: "18px",
+                color:"#FFFFFF",
+                textAlign:"center"
+              }}>
+                  Activate your workplace intelligence
+              </p>
+            </div>
+            <div>
+              <p style={{
+                fontSize:"13px",
+                color:"#B6B6B6",
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontWeight:"400",
+                textAlign:"center"
+              }}>Gain expert mastery over Creative Problem Solving - a superpower for sure shot success at work.</p>
+            </div>
+            <div>
+              <p style={{
+                fontSize:"12px",
+                color:"#767676",
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontWeight:"600",
+                textAlign:"center"
+              }}>
+                Unlock Full Access for<br></br>
+                <span style={{fontFamily: "'Plus Jakarta Sans', sans-serif",
+                 fontSize:"18px",
+                 fontWeight:"700",
+                 color:"#9CE325",
+                 textAlign:"center"}}>INR 1,599/-  Only</span>
+              </p>
+            </div>
+            
+            <div style={{
+              width: "204px",
+              height: "38px",
+              top: "1610px",
+              left: "237px",
+              gap: "0px",
+              borderRadius: "6px",
+              backgroundColor: "#9CE325",
+              opacity: "1",  
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              cursor: "pointer",
+              marginLeft:"auto",
+              marginRight:"auto",
+              
+              
+            }}>
+            <p style={buttonTextStyle}>Buy Solve Pack</p>
+       </div>
+       <div style={{
+            fontSize:"10px",
+            color:"#82D62E",
+            textAlign:"center",
+            fontFamily: "'Plus Jakarta Sans', sans-serif"
+       }}>
+            <p>
+                [link to same]
+                <br></br>
+                one more line if needed
+            </p>
+       </div>
+        </div>
         <div style={headerBelowMain }>
           <p style={{
             marginTop:"13px",
