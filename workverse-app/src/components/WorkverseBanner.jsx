@@ -41,7 +41,7 @@ const WorkverseBanner = () => {
         borderRadius: "13px 0 0 0",
         padding: "1.5rem",
         gap: "1.5rem",
-        width:"556px"
+        maxWidth:"600px"
       }}>
         {/* Logo */}
         <img 
@@ -136,40 +136,38 @@ const WorkverseBanner = () => {
         </div>
 
         {/* Package Features Grid */}
-        {/* Package Features Grid */}
-<div style={{ 
-  display: "grid",
-  gridTemplateColumns: "repeat(2, minmax(250px, 1fr))",
-  gap: "1rem",
-}}>
-  {[
-    { title: "Immersive Learning", text: "Master 3 Sub-skills: Asking right questions, Breaking down problems, and Connecting dots" },
-    { title: "12-Month Support", text: "Neuroda co-thinking support for challenges on your actual job" },
-    { title: "Evaluation", text: "Strengths & Areas of improvement evaluation with lifetime viewing access" },
-    { title: "Certificate", text: "Shareable LinkedIn Certificate for success" },
-  ].map((item, i) => (
-    <div key={i} style={{
-      ...commonStyles.flexCol,
-      background: "linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1885) 100%)",
-      borderRadius: "10px",
-      padding: "1rem",
-      gap: "1rem",
-      minWidth: "250px",
-    }}>
-      <img 
-        src={dummyImage} 
-        alt={item.title} 
-        style={{ width: "70%", height: "auto", margin: "0 auto" }} 
-      />
-      <h4 style={{ ...commonStyles.text, ...commonStyles.greenText, textAlign: "center" }}>
-        {item.title}
-      </h4>
-      <p style={{ ...commonStyles.text, fontSize: "0.8rem", textAlign: "center" }}>
-        {item.text}
-      </p>
-    </div>
-  ))}
-</div>
+        <div style={{ 
+          display: "grid", 
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: "1rem",
+        }}>
+          {[
+            { title: "Immersive Learning", text: "Master 3 Sub-skills: Asking right questions, Breaking down problems, and Connecting dots" },
+            { title: "12-Month Support", text: "Neuroda co-thinking support for challenges on your actual job" },
+            { title: "Evaluation", text: "Strengths & Areas of improvement evaluation with lifetime viewing access" },
+            { title: "Certificate", text: "Shareable LinkedIn Certificate for success" },
+          ].map((item, i) => (
+            <div key={i} style={{
+              ...commonStyles.flexCol,
+              background: "linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1885) 100%)",
+              borderRadius: "10px",
+              padding: "1rem",
+              gap: "1rem",
+            }}>
+              <img 
+                src={dummyImage} 
+                alt={item.title} 
+                style={{ width: "70%", height: "auto", margin: "0 auto" }} 
+              />
+              <h4 style={{ ...commonStyles.text, ...commonStyles.greenText, textAlign: "center" }}>
+                {item.title}
+              </h4>
+              <p style={{ ...commonStyles.text, fontSize: "0.8rem", textAlign: "center" }}>
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
 
         {/* Certificate Section */}
         <div style={{ ...commonStyles.flexCol, gap: "1rem" }}>
@@ -248,6 +246,7 @@ const WorkverseBanner = () => {
           <a href="/unsubscribe" style={{ color: "#6A6A6A", textDecoration: "none" }}>
             unsubscribe from this list
           </a>
+          
           <a href="/contact" style={{ color: "#6A6A6A", textDecoration: "none" }}>
             contact us
           </a>
