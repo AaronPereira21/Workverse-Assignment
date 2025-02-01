@@ -112,6 +112,7 @@ const WorkverseBanner = () => {
             cursor: "pointer",
             fontWeight: "700",
             margin: "0 auto",
+            color:'#1F292A'
           }}>
             Buy Solve Pack
           </button>
@@ -186,7 +187,8 @@ const WorkverseBanner = () => {
             border: "none",
             cursor: "pointer",
             fontWeight: "700",
-            margin: "0 auto",
+            width:"204px",
+            margin: "0 32px 0 0",
           }}>
             View your Certificate
           </button>
